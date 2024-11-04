@@ -1,0 +1,173 @@
+/* styles.css */
+
+/* Couleurs principales */
+:root {
+    --primary-color: #1f4068;
+    --secondary-color: #1b1b2f;
+    --accent-color: #1ae085;
+    --link-color: #1f4068;
+    --text-light: #ffffff;
+    --text-dark: #000000;
+}
+
+/* Réinitialisation du style de base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 1.75rem;
+    color: var(--accent-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header nav a {
+    color: var(--accent-color);
+    text-decoration: none;
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s;
+}
+
+header nav a:hover {
+    color: var(--secondary-color);
+    background-color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+    border-radius: 5px;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+    padding: 1rem;
+    border-top: 2px solid var(--accent-color);
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Boutons */
+.btn-primary {
+    background-color: var(--accent-color);
+    border: none;
+    color: var(--text-dark);
+    transition: background-color 0.3s, transform 0.3s;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+    background-color: #17b674;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Formulaire d'inscription/connexion */
+form {
+    background-color: var(--primary-color);
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group label {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="password"], select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: var(--text-dark);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"], input[type="email"], input[type="password"], select {
+    border-color: var(--accent-color);
+    outline: none;
+}
+
+input:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 5px rgba(26, 224, 133, 0.5);
+}
+
+/* Cartes */
+.card {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+}
+
+.jumbotron {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Liens */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+/* Conteneur principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Titres */
+h2 {
+    color: var(--accent-color);
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Adaptation responsive */
+@media (max-width: 768px) {
+    header nav {
+        text-align: center;
+    }
+
+    .jumbotron {
+        text-align: center;
+    }
+
+    .btn-primary {
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
